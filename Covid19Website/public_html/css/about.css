@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-Nov-2020, 21:35:20
+    Author     : luanakimley
+*/
+
+/* Main */
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin: 5px 60px;
+}
+
+.intro > img {
+    margin: 100px 0;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 100px 0;
+    position: relative;
+}
+
+.gallery img {
+    padding: 7px;
+    width: 180px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.geography iframe {
+    box-shadow: 3px 3px 10px gray;
+}
+
+.slide {
+    display: none;
+}
+
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow .previous, .slideshow .next {
+    position: absolute;
+    top: 40%; 
+}
+
+.previous {
+    left: 0;
+    opacity: 0.5;
+}
+
+.next {
+    right: 0;
+    opacity: 0.5;
+}
+
+.previous, .next {
+    font-weight: bolder;
+    font-size: 3em;
+    background-color: #f9faf4;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.previous:hover, .next:hover {
+    opacity: 1;
+}
+
+.gallerypic {
+    position: relative;
+    padding: 0;
+}
+
+
+.gcaption {
+    display: none;
+    position: absolute;
+    bottom: 11px;
+    left: 7px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    width: 180px;
+    padding: 3px 0;
+    font-size: 0.9em;
+}
+
+.gallerypic:hover .gcaption {    
+    display: block;  
+}
+
+.caption {
+    position: absolute;
+    display: none;
+    bottom: 14px;
+    width: 500px;
+    left: 0px;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.slide:hover .caption {
+    display: block;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    
+    .introtext  {
+        margin-top: 70px;
+    }
+    
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .box, .nobox {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box img, .nobox img {
+        padding-top: 15px;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 800px) {
+    .gallery img {
+        width: 118px;
+        padding: 5px;
+    }
+    
+    .gcaption {
+        font-size: 0.7em;
+        width: 118px;
+        left: 5px;
+        bottom: 9px;
+    }
+}
+
+

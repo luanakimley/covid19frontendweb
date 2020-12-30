@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Book a Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/monas.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/book.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="scripts/validation.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <h1>COVID-19 in Indonesia</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="navlist"><a href="index.html">Home</a></li>
+                    <li class="navlist"><a href="#">About</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="about_indonesia.html">Indonesia</a></li>
+                            <li class="droplist"><a href="about_covid19.html">Covid&#8209;19</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a href="#">Situation</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="situation_cases.html">Cases</a></li>
+                            <li class="droplist"><a href="situation_impacts.html">Impacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a class="current-menu" href="book.html">Book</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="intro">
+                <div class="introtext">
+                    <h1>Book a Test</h1>
+                    <p>Feeling unwell with COVID-19 symptoms?<br>You can book a PCR test through us.</p>
+                </div> 
+                <img src="images/booking.png" alt="Booking" width="150" height="150">
+            </div>
+            <form method="get" action="confirmation.html" onsubmit="return validation2(this);">
+                <h2 class="formtitle">Personal Details</h2>
+                <br>
+                <div class="fname">
+                    <label>First Name: </label>
+                    <input type="text" name="name" pattern="[a-zA-Z ]+" value="" >
+                </div>
+                
+                <br>    
+                <div class="sname">
+                    <label>Surname: </label>
+                    <input type="text" name="surname" pattern="[a-zA-Z ]+"  value="">
+                </div>
+                <br>
+                <div class="phone">
+                    <label>Phone number: </label>
+                    <input type="text" name="phone" pattern="[0-9]+"  value="">
+                </div>
+                <br>
+                <div class="email">
+                    <label>E-mail: </label>
+                    <input type="email" name="email" value="">
+                </div>
+                <br>
+                <div class="birth">
+                    <label>Date of Birth: </label>
+                    <input type="date" name="birth" max="2020-12-18" style="font-family: 'Karla', sans-serif;" value="">
+                </div>
+                <br>
+                <div class="address1">
+                    <label>Address Line 1: </label>
+                    <input type="text" name="address1"  value="">
+                </div>
+                <br>
+                <div class="address2">
+                    <label>Address Line 2: </label>
+                    <input type="text" name="address2"  value="">
+                </div>
+                <br>
+                <div class="city">
+                    <label>City: </label>
+                    <input type="text" name="city"  pattern="[a-zA-Z]+" value="">
+                </div>
+                <br>
+                <div class="province">
+                    <label>Province: </label>
+
+                    <select name="province" style="font-family: 'Karla', sans-serif;">
+                        <option value = "">-</option>
+                        <option value = "aceh">Aceh</option>
+                        <option value = "bali">Bali</option>
+                        <option value = "babel">Bangka Belitung Islands</option>
+                        <option value = "banten">Banten</option>
+                        <option value = "bengkulu">Bengkulu</option>
+                        <option value = "cjava">Central Java</option>
+                        <option value = "ckalimantan">Central Kalimantan</option>
+                        <option value = "csulawesi">Central Sulawesi</option>
+                        <option value = "ejava">East Java</option>
+                        <option value = "ekalimantan">East Kalimantan</option>
+                        <option value = "ent">East Nusa Tenggara</option>
+                        <option value = "gorontalo">Gorontalo</option>
+                        <option value = "jakarta">Jakarta</option>
+                        <option value = "jambi">Jambi</option>
+                        <option value = "jogja">Jogjakarta</option>
+                        <option value = "lampung">Lampung</option>
+                        <option value = "maluku">Maluku</option>
+                        <option value = "nkalimantan">North Kalimantan</option>
+                        <option value = "nmaluku">North Maluku</option>
+                        <option value = "nsulawesi">North Sulawesi</option>
+                        <option value = "nsumatra">North Sumatra</option>
+                        <option value = "papua">Papua</option>
+                        <option value = "riau">Riau</option>
+                        <option value = "riaui">Riau Islands</option>
+                        <option value = "sesulawesi">Southeast Sulawesi</option>
+                        <option value = "skalimantan">South Kalimantan</option>
+                        <option value = "ssulawesi">South Sulawesi</option>
+                        <option value = "ssumatra">South Sumatra</option>
+                        <option value = "wjava">West Java</option>
+                        <option value = "wkalimantan">West Kalimantan</option>
+                        <option value = "wnt">West Nusa Tenggara</option>
+                        <option value = "wpapua">West Papua</option>
+                        <option value = "wsulawesi">West Sulawesi</option>
+                        <option value = "wsumatra">West Sumatra</option>
+                    </select>
+                </div>
+                <p id="error"></p>
+                <br>
+                <br>
+                <h2 class="formtitle">Test Details</h2>
+                <div class="location">
+                    <label>Location: </label>
+                    <select name="location" style="font-family: 'Karla', sans-serif;">
+                        <option value = "">-</option>
+                        <option value = "pertamina">Pertamina Hospital, Jakarta</option>
+                        <option value = "siloam">Siloam Hospital, Jakarta</option>
+                        <option value = "prodia">Prodia Lab, Bandung</option>
+                        <option value = "tirta">Tirta Medical Centre, Surabaya</option>
+                        <option value = "tabanan">Tabanan General Hospital, Bali</option>
+                    </select>
+                </div>
+                <br>
+                <div class="date">
+                    <label>Date: </label>
+                    <input type="date" name="testdate" min="2020-12-18" style="font-family: 'Karla', sans-serif;" value="">
+                </div>
+                <p id="error2"></p>
+                <br>
+                <br>
+                <h2 class="formtitle">Payment Details</h2>
+                <div class="price">
+                    <label>Price: </label>
+                    <input type="radio" name="price" value="instant" >Rp 950k Instant
+                    <input type="radio" name="price" value="regular" >Rp 600k Regular
+                </div>
+                <br>
+                <div class="paymethod">
+                    <label>Payment Method: </label>
+                    <input type="radio" name="paymethod" value="mastercard" > Mastercard
+                    <input type="radio" name="paymethod" value="visa" > Visa
+                    <input type="radio" name="paymethod" value="discovercard" > PayPal
+                </div>
+                <br>
+                <div class="cardnum">
+                    <label>Card Number: </label>
+                    <input type="text" name="cardnum"  pattern="[0-9]{16}" size="50" value="">
+                </div>
+                <br>
+                <div class="cvv">
+                    <label>CCV: </label>
+                    <input type="password" name="cvv"  pattern="[0-9]{3}" size="50" value="">
+                </div>
+                <br>
+                <div class="cardname">
+                    <label>Name on Card: </label>
+                    <input type="text" name="cardname"  size="50" value="" pattern="[a-zA-Z ]+">
+                </div>
+                <p id="error3"></p>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Submit & Pay" style="font-family: 'Karla', sans-serif; ">
+            </form> 
+            <br>
+            <br>
+            <br>
+            <br>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2020 Luana Kimley</p> 
+        </footer>
+    </body>
+</html>

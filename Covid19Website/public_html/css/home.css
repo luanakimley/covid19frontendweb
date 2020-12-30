@@ -1,0 +1,223 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-Nov-2020, 10:42:04
+    Author     : luanakimley
+*/
+
+
+
+
+/* Main */
+
+.introtext h1 {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+.introtext p {
+    position: absolute;
+    left: 10%;
+    top: 52%;
+}
+
+.intro {
+    position: relative;
+}
+
+.homebig1 {
+    padding-top: 42px;
+    max-width: 100%;
+}
+
+.slideshow {
+    position: relative;
+}
+
+
+.slide {
+    display: none;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    right: 0px;
+    font-size: 1.25em;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+}
+
+.slide:hover .caption {
+    display: block;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 65px;
+    column-gap: 75px;
+    font-size: 1.15em;
+}
+
+.about img {
+    padding: 25px;
+}
+
+.about_indo {
+    width: 30%;
+    background-color: white;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.about_indo:hover, .about_covid:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.about_indo > h2 {
+    background-color: #ffc94b;
+    padding: 5px;
+}
+
+.about a {
+    text-decoration: none;
+}
+
+.about p {
+    padding: 20px 20px;
+    padding-top: 0;
+}
+
+.about_covid {
+    width: 30%;  
+    background-color: white;
+    box-shadow: 5px 5px 10px lightgray;
+    
+}
+
+.about_covid > h2 {
+    background-color: #fc9195;  
+    padding: 5px;
+}
+
+.substext h2 {
+    font-size: 2.5em;
+}
+
+.substext p {
+    font-size: 1.25em;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.substext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+input {
+    width: 50%;
+    padding: 15px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #f9faf4;
+}
+
+ input[type="email"] {
+    border: none;
+    border-bottom: 4px solid #ffc94b;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #4a6163;
+    color: white;
+}
+
+.form p {
+    text-align: center;
+}
+
+
+
+.dot {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.dot:hover {
+    background-color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+
+/* Media Queries for smaller screens*/
+
+@media screen and (max-width: 1200px) {
+  .introtext p {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 1100px) {
+
+    
+    .homebig1 {
+        margin-top: 40px;
+    }
+    
+    .slidenum {
+        top: 90px;
+    }
+    
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 800px) {
+    .caption {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .caption {
+        font-size: 0.65em;
+    }
+}
+
+
+
+
+

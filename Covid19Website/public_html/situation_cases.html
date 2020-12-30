@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Situation - Cases</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/monas.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/situation.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <h1>COVID-19 in Indonesia</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="navlist"><a href="index.html">Home</a></li>
+                    <li class="navlist"><a href="#">About</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="about_indonesia.html">Indonesia</a></li>
+                            <li class="droplist"><a href="about_covid19.html">Covid&#8209;19</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a class="current-menu" href="#">Situation</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a class="current-menu" href="situation_cases.html">Cases</a></li>
+                            <li class="droplist"><a href="situation_impacts.html">Impacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a href="book.html">Book</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="introtext">
+                <h1>COVID-19 Cases</h1>
+                <p>Indonesia's battle with COVID-19 is far from over. <br> Stay safe, together we're stronger!</p>
+            </div>  
+            <div class="smallboxes">
+                <div class="smallbox1">
+                    <img src="images/mask.png" alt="Mask" width="110">
+                    <h3>569,707</h3>
+                    <p><b>Confirmed Cases</b><br>+6,027 Cases<br>(last updated)</p>
+                </div>
+                <div class="smallbox2">
+                    <img src="images/doctor.png" alt="Doctor" width="110">
+                    <h3>81,669</h3>
+                    <p><b>Active Cases</b><br>14.3% of Confirmed Cases</p>
+                </div>
+                <div class="smallbox3">
+                    <img src="images/hand.png" alt="Recovered" width="110">
+                    <h3>470,449</h3>
+                    <p><b>Recovered</b><br>82.6% of Confirmed Cases</p>
+                </div>
+                <div class="smallbox4">
+                    <img src="images/tape.png" alt="Death" width="110">
+                    <h3>17,589</h3>
+                    <p><b>Death</b><br>3.1% of<br>Confirmed Cases</p>
+                </div>
+            </div>
+            <p class="update">Last updated: 5/12/2020 - 23:29 IST</p>
+            <div class="box" style="background-image: linear-gradient(180deg, #f9faf4, #ffc94b);">
+                <iframe src="https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&country=~IDN&region=Asia&casesMetric=true&interval=total&hideControls=true&smoothing=0&pickerMetric=location&pickerSort=asc" loading="lazy" style="width: 500px; height: 400px; border: 0px none;"></iframe>
+                <div class="text">
+                    <h2>Cases Graph</h2>
+                    <p>Interactive graph of cumulative confirmed<br>COVID-19 cases in Indonesia. The growth of<br>the virus has been increasing rapidly in the<br>past 9 months since the first case was reported.</p>
+                </div>
+            </div>
+            <div class="nobox">
+                <div class="text">
+                    <h2>Cases per Province</h2>
+                    <p>Table with information of the number of COVID-19<br>cases in each of the 34 provinces in Indonesia.<br>Includes percentages of people with COVID-19<br>in each province compared to nationwide data.</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Province</th>
+                        <th>Cases</th>
+                    </tr>
+                    <tr>
+                        <td>Jakarta</td>
+                        <td>137,919 (25.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>East Java</td>
+                        <td>62,313 (11.5%)</td>
+                    </tr>
+                    <tr>
+                        <td>Central Java</td>
+                        <td>56,626 (10.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>West Java</td>
+                        <td>53,395 (9.8%)</td>
+                    </tr>
+                    <tr>
+                        <td>South Sulawesi</td>
+                        <td>20,804 (3.8%)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Riau</td>
+                        <td>20,238 (3.7%)</td>
+                    </tr>
+                    <tr>
+                        <td>West Sumatra</td>
+                        <td>20,098 (3.7%)</td>
+                    </tr>
+                    <tr>
+                        <td>East Kalimantan</td>
+                        <td>19,748 (3.6%)</td>
+                    </tr>
+                    <tr>
+                        <td>North Sumatra</td>
+                        <td>15,671 (2.9%)</td>
+                    </tr>
+                    <tr>
+                        <td>Bali</td>
+                        <td>13,988 (2.6%)</td>
+                    </tr>
+                    <tr>
+                        <td>South Kalimantan</td>
+                        <td>13,281 (2.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>Banten</td>
+                        <td>13,215 (2.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>Papua</td>
+                        <td>10,094 (1.9%)</td>
+                    </tr>
+                    <tr>
+                        <td>South Sumatra</td>
+                        <td>9,530 (1.8%)</td>
+                    </tr>
+                    <tr>
+                        <td>Aceh</td>
+                        <td>8,301 (1.5%)</td>
+                    </tr>
+                    <tr>
+                        <td>North Sulawesi</td>
+                        <td>6,962 (1.3%)</td>
+                    </tr>
+                    <tr>
+                        <td>Southeast Sulawesi</td>
+                        <td>6,594 (1.2%)</td>
+                    </tr>
+                    <tr>
+                        <td>Central Kalimantan</td>
+                        <td>6,122 (1.1%)</td>
+                    </tr>
+                    <tr>
+                        <td>Jogjakarta</td>
+                        <td>6,073 (1.1%)</td>
+                    </tr>
+                    <tr>
+                        <td>Riau Islands</td>
+                        <td>5,490 (1.0%)</td>
+                    </tr>
+                    <tr>
+                        <td>West Papua</td>
+                        <td>5,352 (1.0%)</td>
+                    </tr>
+                    <tr>
+                        <td>West Nusa Tenggara</td>
+                        <td>4,697 (0.9%)</td>
+                    </tr>
+                    <tr>
+                        <td>Maluku</td>
+                        <td>4,620 (0.8%)</td>
+                    </tr>
+                    <tr>
+                        <td>Lampung</td>
+                        <td>3,939 (0.7%)</td>
+                    </tr>
+                    <tr>
+                        <td>Gorontalo</td>
+                        <td>3,110 (0.6%)</td>
+                    </tr>
+                    <tr>
+                        <td>West Kalimantan</td>
+                        <td>2,438 (0.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>North Maluku</td>
+                        <td>2,376 (0.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>Jambi</td>
+                        <td>1,993 (0.4%)</td>
+                    </tr>
+                    <tr>
+                        <td>Central Sulawesi</td>
+                        <td>1,872 (0.3%)</td>
+                    </tr>
+                    <tr>
+                        <td>Bengkulu</td>
+                        <td>1,842 (0.3%)</td>
+                    </tr>
+                    <tr>
+                        <td>North Kalimantan</td>
+                        <td>1,532 (0.3%)</td>
+                    </tr>
+                    <tr>
+                        <td>West Sulawesi</td>
+                        <td>1,473 (0.3%)</td>
+                    </tr>
+                    <tr>
+                        <td>East Nusa Tenggara</td>
+                        <td>1,242 (0.2%)</td>
+                    </tr>
+                    <tr>
+                        <td>Bangka Belitung Islands</td>
+                        <td>1,036 (0.2%)</td>
+                    </tr>
+                </table>
+                <p class="update">Last updated: 5/12/2020 - 23:29 IST</p>
+            </div>        
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2020 Luana Kimley</p> 
+        </footer>
+    </body>
+</html>

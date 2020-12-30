@@ -1,0 +1,254 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Nov-2020, 12:19:57
+    Author     : luanakimley
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9faf4;
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    filter: drop-shadow(0 8px 10px lightgray);
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+}
+
+header h1 {
+    padding-left: 20px;
+    color: #4a6163;
+    font-size: 2.25em;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.3} 
+  to {opacity: 1}
+}
+
+
+/* Nav */
+
+.menu ul {
+    display: flex;
+}
+
+.current-menu {
+    color: black;
+    font-weight: bold;
+}
+
+.menu a {
+    text-transform:  uppercase;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+.menu li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    width: 155px;
+    margin-right: 20px;
+
+}
+
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;  
+    padding-right: 0px;
+    margin: 0;
+}
+
+.navlist a:hover {
+    font-weight: bold;
+    color: black;
+    border-bottom: 4px solid #f17a7e;
+    -webkit-transition: 0.2s;
+    transition: 0.2s ;
+}
+
+
+.menu li:hover .dropdown > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5px;  
+    width: 145px;
+    z-index: 2;
+}
+
+.droplist a:hover {
+    font-weight: bold;
+    color: #f17a7e;
+    border-bottom: none;
+}
+
+.droplist a {
+    position: relative;
+    color: black;
+    text-align: center;
+    margin-left: 0;
+}
+
+.droplist {
+    display: none;
+}
+
+/* Main */
+
+.introtext h1 {
+    color: #f9a66c;
+    font-size: 500%;
+    display: flex;
+    text-shadow: 2.5px 2.5px 2px black;
+    padding-top: 42px;
+}
+
+.introtext p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.box {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 50px;
+    max-width: 100%;
+    padding: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.box img, .nobox img {
+    padding: 10px 0;
+}
+
+.nobox {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    column-gap: 50px;
+    max-width: 100%;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 80px;
+    flex-wrap: wrap;
+}
+
+.text h2 {
+    font-size: 2.75em;
+    color: #4a6163;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text p {
+    font-size: 1.25em;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding: 10px;
+    align-items: flex-end;
+    font-family: 'Karla', sans-serif;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for smaller screens*/
+
+@media screen and (max-width: 750px) {
+    p , h1, h2 {
+        font-size: 0.8em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    table td {
+        font-size: 0.8em;
+    }
+
+    table {
+        margin-top: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .homebig1 {
+        margin-top: 38px;
+    }
+
+}
+
+
+

@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-Nov-2020, 21:41:16
+    Author     : luanakimley
+*/
+
+/* Main */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introtext {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+    padding: 7px;
+}
+
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+table th {
+    padding: 20px;
+    font-size: 2em;
+    color: #4a6163;
+}
+
+table td {
+    padding: 5px;
+}
+
+input {
+    padding: 8px;
+    width: 25%;
+}
+
+select {
+    padding: 8px;
+    width: 26.4%;
+}
+
+
+
+input[type="submit"] {
+    width: 25%; 
+    display: flex; 
+    justify-content: center; 
+    background-color: #f9faf4; 
+    display: block; 
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #f17a7e;
+    color: white;
+}
+
+
+input[type="radio"] {  
+    width: 5%;
+}
+
+input[type="date"] {
+    width: 25%;
+}
+
+
+.fname, .sname, .phone, .address1, .email, .birth, .address2, .city, .province, .location, .date, .price, .paymethod, .cardnum, .cvv, .cardname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formtitle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2em;
+    color: #4a6163
+}
+
+#error, #error2, #error3 {
+    margin-top: 50px;
+    text-align: center;
+}

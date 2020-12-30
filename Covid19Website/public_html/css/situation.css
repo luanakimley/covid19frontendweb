@@ -1,0 +1,134 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-Nov-2020, 21:40:21
+    Author     : luanakimley
+*/
+
+iframe {
+    display: flex;
+    z-index: 1;
+}
+
+.introtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.box {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 50px;
+    max-width: 100%;
+    padding: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.smallboxes {
+    display: flex;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5em;
+    font-weight: 600;
+    flex-wrap: wrap;
+    margin: 40px;
+    padding: 30px;
+}
+
+.smallbox1:hover, .smallbox2:hover, .smallbox3:hover, .smallbox4:hover{
+    transform: scale(1.08);
+    transition: 0.7s;
+}
+
+.smallboxes h3 {
+    padding-top: 15px;
+}
+
+.smallboxes p {
+    padding-top: 10px;
+}
+
+.smallbox1 {
+    background-color: #f9a66c;
+    width: 200px;
+    height: 265px;
+    padding: 30px;
+    text-align: center;
+}
+
+.smallbox2 {
+    background-color: #4a6163;
+    width: 200px;
+    height: 265px;
+    padding: 30px;
+    text-align: center;
+}
+
+.smallbox3 {
+    background-color: #ffc94b;
+    width: 200px;
+    height: 265px;
+    padding: 30px;
+    text-align: center;
+}
+
+.smallbox4 {
+    background-color: #f17a7e;
+    width: 200px;
+    height: 265px;
+    padding: 30px;   
+    text-align: center;
+}
+
+.update {
+    text-shadow: none;
+    color: gray;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 600px;
+    font-size: 1.15em;
+    height: 500px;
+    overflow: scroll;
+    display: block;
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    background-color: white;
+}
+
+th {
+    background-color: #fc9195;
+}
+
+td {
+    text-align: left;
+}
+
+table td:nth-child(1) {
+    width: 431px;
+}
+
+tr:nth-child(odd) td {
+    background-color: whitesmoke;
+}
+
+th, td {
+    padding: 10px;
+}

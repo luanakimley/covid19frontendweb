@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>COVID-19 in Indonesia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/monas.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <script src="scripts/script.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="scripts/validation.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1>COVID-19 in Indonesia</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="navlist"><a class="current-menu" href="index.html">Home</a></li>
+                    <li class="navlist"><a href="#">About</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="about_indonesia.html">Indonesia</a></li>
+                            <li class="droplist"><a href="about_covid19.html">Covid&#8209;19</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a href="#">Situation</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="situation_cases.html">Cases</a></li>
+                            <li class="droplist"><a href="situation_impacts.html">Impacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a href="book.html">Book</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="intro">
+                <div class="slideshow ">
+                    <div class="slide fade">
+                        <img class="homebig1" src="images/home_monas.jpg" alt="Monas, the national monument of Indonesia"/>   
+                        <p class="caption fade"><b>Monas</b>, the national monument of Indonesia, which is located in the centre of the capital city Jakarta.</p>    
+                    </div>
+                    <div class="slide fade">
+                        <img class="homebig1" src="images/home_lempuyang.jpg" alt="Lempuyang, a temple in Bali"/>   
+                        <p class="caption fade"><b>Lempuyang Temple</b>, one of the highly regarded Hindu temple in Mount Lempuyang, Karangasem, Bali.</p>    
+                    </div>
+                    <div class="slide fade">
+                        <img class="homebig1" src="images/home_kelimutu.jpg" alt="elimutu Crater"/>   
+                        <p class="caption fade"><b>Kelimutu</b>, a volcano with three volcanic crater lakes that differ in colour, located in Flores island.</p> 
+                    </div>
+                </div>
+
+                <div class="introtext">
+                    <h1>It is not <br> over yet</h1>
+                    <p>Indonesia's battle with COVID-19 is far from over. <br> Stay safe, together we're stronger!</p>
+                </div>  
+            </div>
+            <br>
+
+            <div style="text-align: center;" >
+                <span class="dot" onclick="dot(0)"></span> 
+                <span class="dot" onclick="dot(1)"></span> 
+                <span class="dot" onclick="dot(2)"></span> 
+            </div>
+
+            <div class="about">
+                <div class="about_indo" style="cursor: pointer;" onclick="window.location = 'about_indonesia.html';">
+                    <h2>About Indonesia</h2>
+                    <img src="images/monas.png" alt="Indonesia Flag" height="120">
+                    <p>Indonesia, officially the Republic of Indonesia, is a transcontinental country in Southeast Asia and Oceania, between the Indian and Pacific oceans.</p>
+                </div>
+                <div class="about_covid" style="cursor: pointer;" onclick="window.location = 'about_covid19.html';">
+                    <h2>About COVID-19</h2>
+                    <img src="images/coronavirus.png" alt="Coronavirus" height="120">
+                    <p>Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: linear-gradient(180deg, #f9faf4, white); margin-bottom: 0; cursor: pointer; "  onclick="window.location = 'situation_cases.html';">
+                <img src="images/graph.png" alt="Graph" width="300">
+                <div class="text">
+                    <h2>Cases</h2>
+                    <p>Information on COVID-19 cases in Indonesia.<br>Including data with numbers of confirmed<br>cases, active cases, recovered, and COVID-19<br>related deaths.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="nobox" style="background-image: linear-gradient(180deg, white, #f9faf4); cursor: pointer; justify-content: flex-end; margin-top: 0;"  onclick="window.location = 'situation_impacts.html';">
+                <div class="text">
+                    <h2>Impact</h2>
+                    <p>The impact of COVID-19 towards Indonesia's<br>society in several aspects of their life, such<br>as their economy, employment, and tourism.</p>
+                </div>
+                <img src="images/impact.png" alt="Impact" width="300">
+            </div>
+            <br>
+            <br>
+            <div class="form">
+                <div class="substext">
+                    <h2>Want to get the latest updates?</h2>
+                    <p>Enter your email to subscribe!</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <form method="get" onsubmit="return validation1(this)">
+                    <input type="email" placeholder="Enter your email here" name="email" value="">
+                    <input type="submit" value="Submit"/>
+                </form>
+                <br>
+                <p id="error"></p>
+                <div class="substext" style="margin-top: 90px;">
+                    <h2>Or are you feeling unwell?</h2>
+                    <p>Book a PCR test through us!</p>
+                </div>
+                <form method="get" action="book.html">
+                    <input type="submit" value="Book" style="margin-bottom: 180px;">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2020 Luana Kimley</p> 
+        </footer>
+        <script>
+
+            var slideIndex = 1;
+            var slide = document.getElementsByClassName("slide");
+
+            function slideShow() {
+
+                for (var i = 0; i < slide.length; i++)
+                {
+                    slide[i].style.display = "none";
+                }
+
+                if (slideIndex > slide.length)
+                {
+                    slideIndex = 1;
+                }
+     
+                slide[slideIndex - 1].style.display = "block";
+   
+                setTimeout(slideShow, 5000);
+                
+                slideIndex++;
+            }
+            
+            function dot(n) {
+                var dots = document.getElementsByClassName("dot");
+                
+                dots.onclick = slide[n].style.display = "block";
+                
+                if (n == 0) {
+                    slide[1].style.display = "none"; 
+                    slide[2].style.display = "none";
+                    slideIndex = 1;
+                }
+                else if (n == 1) {
+                    slide[0].style.display = "none"; 
+                    slide[2].style.display = "none";
+                    slideIndex = 2;
+                }
+                else {
+                    slide[0].style.display = "none"; 
+                    slide[1].style.display = "none";
+                    slideIndex = 3;
+                }
+                
+               
+            }
+            
+            slideShow();
+            
+        </script>
+    </body>
+</html>

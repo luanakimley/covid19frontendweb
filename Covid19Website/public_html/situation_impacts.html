@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Situation - Restrictions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/monas.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/situation.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <h1>COVID-19 in Indonesia</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="navlist"><a href="index.html">Home</a></li>
+                    <li class="navlist"><a href="#">About</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="about_indonesia.html">Indonesia</a></li>
+                            <li class="droplist"><a href="about_covid19.html">Covid&#8209;19</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a class="current-menu" href="#">Situation</a>
+                        <ul class="dropdown">
+                            <li class="droplist"><a href="situation_cases.html">Cases</a></li>
+                            <li class="droplist"><a class="current-menu" href="situation_impacts.html">Impacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlist"><a href="book.html">Book</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="introtext">
+                <h1>COVID-19 Impacts</h1>
+                <p>Our battle with COVID-19 has been harsh and <br>it has impacted lots of people during these times.</p>
+            </div>  
+            <div class="smallboxes" style="margin-bottom: 70px;">
+                <div class="smallbox2" style="cursor: pointer;" onclick="window.location = '#economy'">
+                    <img src="images/economy.png" alt="Economy" width="110">
+                    <h3>Impact on Economy</h3>
+                    <p style='font-size: 0.8em;'>COVID-19 impact towards Indonesia's economy</p>
+                </div>
+                <div class="smallbox3" style="cursor: pointer;" onclick="window.location = '#employment'">
+                    <img src="images/employment.png" alt="Employee" width="110">
+                    <h3>Impact on Employment</h3>
+                    <p style='font-size: 0.8em;'>COVID-19 impact towards Indonesia's employees</p>
+                </div>
+                <div class="smallbox4"  style="cursor: pointer;" onclick="window.location = '#tourism'">
+                    <img src="images/tourism.png" alt="Tourism" width="110">
+                    <h3>Impact on Tourism</h3>
+                    <p style='font-size: 0.8em;'>COVID-19 impact towards Indonesia's tourism</p>
+                </div>
+            </div> 
+            <a name="economy"></a>
+            <div class="box" style="background-image: linear-gradient(180deg, #f9faf4, #ffc94b);">
+                <img src="images/economy2.png" alt="Economy" width="300">
+                <div class="text">
+                    <h2>Impact on Economy</h2>
+                    <p>Indonesia's <b>household consumption</b>, which sustained <b>60%</b><br>of it's economy has <b>dropped</b> from 5.02% to 2.84%. The <b>weakening<br>economy worldwide</b> had also made <b>commodity prices lower</b> and<br>made <b>Indonesia's export</b> to other countries <b>stopped</b>. The <b>economic<br>turmoil</b> happening due to COVID-19 can <b>go down in history</b> for the<br>Indonesians because it <b>really impacted</b> the <b>management of state<br>finances</b> with <b>two revisions</b> of the <b>state budget</b> and <b>national<br>economic recovery efforts.</b></p>
+                </div>
+            </div>
+            
+            <a name="employment"></a>
+            <div class="nobox">
+                <div class="text">
+                    <h2>Impact on Employment</h2>
+                    <p>Like many other countries, Indonesia also experienced a <b>significant<br>increase</b> on the <b>number of unemployed people</b>. Before COVID-19, in<br><b>February 2020</b>, <b>4.99%</b> of Indonesia's people are unemployed, and in<br><b>March 2020</b>, the percentage of unemployed people increased to <b>6.17%<br>to 6.65%</b>. Indonesia's <b>labour market</b> is facing a <b>crisis</b> and currently,<br>the <b>only sector</b> that is going to <b>grow</b> is only the sectors related to<br><b>technology</b>. The reason for that is because of the <b>"work from home"</b><br>method that is now implemented in <b>schools and offices.</b></p>
+                </div>
+                <img src="images/employment2.png" alt="Employement" width="300">
+            </div>
+            
+            <a name="tourism"></a>
+            <div class="box" style="background-image: linear-gradient(180deg, #f9faf4, #fc9195); margin-bottom: 0;">
+                <img src="images/tourism2.png" alt="Tourism" width="300">
+                <div class="text">
+                    <h2>Impact on Tourism</h2>
+                    <p>The tourism sector, which is one of the <b>biggest sector</b> contributing<br>to <b>Indonesia's income</b>, is the <b>most affected sector</b> because of COVID-19.<br>The spread of the virus has <b>forced hotels, tourist attractions, malls, </b>and<br><b>cafes</b> to <b>close</b> for an <b>unpredictable duration of time</b>. <b>Last year</b>, <b>16 million<br>foreign tourists</b> visited Indonesia, which gave an income of <b>20 billion USD</b>,<br>but <b>currently,</b> there is <b>no tourist at all</b>. It is predicted that almost <b>15 million<br>people</b> on this sector will <b>lose their jobs</b> until the end of the year.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+           <p>Copyright &copy; 2020 Luana Kimley</p> 
+        </footer>
+    </body>
+</html>
